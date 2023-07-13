@@ -1,0 +1,42 @@
+.my_account_ctas {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    .link3 {
+      &:first-child {
+        .product_desc {
+          text-transform: lowercase;
+        }
+      }
+    }
+  
+    .link3_img {
+      padding: 0;
+    }
+    .product_desc {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+    }
+    img {
+      width: 96px;
+      height: 96px;
+    }
+  }
+  @media (max-width: 768px) {
+    .my_account_ctas {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      img {
+        width: 55px;
+        height: 55px;
+      }
+    }
+  }
+  @media (max-width: 420px) {
+    .my_account_ctas {
+      .product_desc {
+        width: 174px;
+      }
+    }
+  }

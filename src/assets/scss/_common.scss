@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+.specical_margin{
+  margin-top: 173px;
+}
+button{
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: $primary_color;
+}
+a,
+span {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+.section_padding {
+  padding: 40px 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: initial;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1192px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.invalid-feedback {
+  color: $error-color;
+  @extend %text-third;
+  padding-left: 20px;
+}
+
+.text-capital {
+  text-transform: capitalize;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.white {
+  color: white;
+}
+.d-block{
+  display: block;
+}
+.d-none {
+  display: none;
+}
+.f-column {
+  flex-direction: column;
+}
+.j-between{
+  justify-content: space-between;
+}
+.product_all_cta {
+  margin: auto;
+  margin-top: 40px;
+}
+
+.rotate-180{
+  
+  transform: rotate(-180deg);
+  transition: 0.3s;
+}
+.rotate-90{
+transform: rotate(90deg);
+}
+.t-right{
+  text-align: right
+}
+.form_input {
+  @extend %text-second;
+  text-transform: capitalize;
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid #d8d6e8;
+  border-radius: 30px;
+  &:disabled {
+    color: $fifth-color;
+    background-color: white;
+    border: 1px dashed #d8d6e8;
+  }
+  &:disabled + .inputLabel {
+    color: $fifth-color;
+  }
+
+  // margin-bottom: 20px; not imp think so
+  transition: 0.3s;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px rgb(66 38 89 / 80%);
+  }
+}
+
+/*======= Input Required Feild =======*/
+
+.required_feild {
+  margin-bottom: 20px;
+  input {
+    margin-bottom: 0;
+  }
+}
+
+/*======= BUTTON COMMON CLASS =======*/
+
+.primary_cta {
+  @extend %primary_cta;
+}
+
+
+
+/*======= HEADING COMMON CLASS =======*/
+.primary_heading {
+  @extend %primary_heading;
+}
+
+.secondary_heading {
+  @extend %secondary_heading;
+}
+
+.section_heading {
+  @extend %section_heading;
+}
+
+.product_title {
+  @extend %product_title;
+}
+.product_price {
+  @extend %product_price;
+}
+// to be checked
+.discount_offer {
+  @extend %discount_offer;
+}
+.line {
+  @extend %line;
+}
+.bg-white {
+  @extend %bg-white;
+}
+/*======= TEXT COMMON CLASS =======*/
+.text-first {
+  @extend %text-first;
+}
+
+.text-second {
+  @extend %text-second;
+}
+
+.text-third {
+  @extend %text-third;
+}
+.text-fourth {
+  @extend %text-fourth;
+}
+.text-fifth {
+  @extend %text-fifth;
+}
+.text-six {
+  @extend %text-six ;
+}
+// Modfify Swiper Slider
+.swiper{
+  height: 100%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-image: url("../icons/next_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+//not fixed
+// .swiper-slide{
+//   height: 100%!important;
+// }
+.pop-up_overlay{
+  @extend %pop-up_overlay;
+}
+
+/* ============== Media Query ============== */
+@media only screen and (max-width: "1024px") {
+  .specical_margin{
+    margin-top: 101px;
+  }
+}
+@media only screen and (max-width: "768px") {
+  .swiper-button-prev, .swiper-button-next{
+    display: none;
+  }
+  .section_padding {
+    padding: 25px 0;
+  }
+}

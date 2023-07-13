@@ -1,0 +1,121 @@
+.return_warning_box {
+  padding: 14px 20px 14px 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    #ffb900;
+  border-radius: 10px;
+  gap: 12px;
+  margin-bottom: 40px;
+  img {
+    align-self: baseline;
+    line-height: 0;
+  }
+}
+.return_warning_head_desc {
+  line-height: 0;
+}
+
+.return_warning_heading {
+  @extend %text-second;
+  color: #664a00;
+  margin-bottom: 4px;
+}
+.return_warning_desc {
+  @extend %text-third;
+  color: #664a00;
+}
+
+.return_info_box {
+  padding: 50px;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid $second_border_bg;
+  border-radius: 20px;
+  margin: 20px 0;
+  .radio_label {
+    color: $primary-color;
+  }
+}
+.upload_file_box {
+  margin-top: 40px;
+}
+.upload_return_prdct_img_video {
+  display: none;
+}
+.return_prdct_dashed_box {
+  cursor: pointer;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: 2px dashed $second_border_bg;
+  border-radius: 20px;
+  display: block;
+}
+.rtn_prdct_img_upload {
+  background: $fourth-color;
+  border-radius: 20px;
+  padding: 80px;
+  line-height: 0;
+  place-items: center;
+  gap: 12px;
+}
+.rtn_prdct_text_cta {
+  align-items: center;
+  gap: 6px;
+  .w_brdr_cta {
+    padding: 0;
+    text-transform: capitalize;
+    &:hover {
+      background: transparent;
+      text-decoration: underline;
+    }
+  }
+}
+.drop_file_validation {
+  @extend %text-fifth;
+}
+.return_cta {
+  gap: 24px;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .return_warning_box {
+    margin-bottom: 20px;
+  }
+  .return_info_box {
+    padding: 20px;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    border-radius: 15px;
+    margin: 10px 0;
+  }
+  .upload_file_box {
+    margin-top: 20px;
+  }
+  .return_prdct_dashed_box {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  .rtn_prdct_img_upload {
+    border-radius: 10px;
+    padding: 20px;
+    place-items: center;
+    gap: 12px;
+  }
+  .rtn_prdct_text_cta {
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 6px;
+    .w_brdr_cta {
+      width: unset;
+    }
+  }
+  .return_cta {
+    gap: 10px;
+  }
+}

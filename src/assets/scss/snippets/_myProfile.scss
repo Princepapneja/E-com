@@ -1,0 +1,117 @@
+.my_profile_box {
+  padding: 30px;
+  background: $secondary-bg;
+  border: 1px solid $second_border_bg;
+  border-radius: 20px;
+  gap: 60px;
+  margin-bottom: 20px;
+  .line {
+    display: none;
+  }
+  .transparent_cta {
+    display: block;
+  }
+}
+.my_profile_img_username {
+  line-height: 0;
+  align-items: center;
+  gap: 15px;
+}
+.my_profile_img {
+  border-radius: 50%;
+  border: 2px solid #67517a;
+  box-shadow: 0px 7px 8px -4px rgba(176, 190, 197, 0.2),
+    0px 12px 17px 2px rgba(176, 190, 197, 0.14),
+    0px 5px 22px 4px rgba(176, 190, 197, 0.12);
+  width: 134px;
+  height: 134px;
+  line-height: 0;
+  object-fit: none;
+}
+.my_username_mail {
+  border-right: 1px solid $second_border_bg;
+  padding-right: 60px;
+
+  .product_desc {
+    text-transform: lowercase;
+  }
+}
+.my_username {
+  @extend %product_title;
+  margin-bottom: 10px;
+}
+.my_profile_input_img {
+  align-self: center;
+}
+.my_personal_info_form {
+  margin-top: 20px;
+}
+.edit_pencil {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.underline_cta {
+  @extend %text-second;
+  color: $tertiary-color;
+  text-transform: capitalize;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.my_personal_form_inputs {
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.my_personal_info_form {
+  .main_prdct_detail_item {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .my_profile_box {
+    padding: 15px;
+    border-radius: 15px;
+    gap: 8px;
+    flex-direction: column;
+    .line {
+      display: block;
+    }
+    .rotated-line {
+      display: none;
+    }
+  }
+  .my_profile_img_username {
+    align-items: center;
+    gap: 15px;
+  }
+  .my_username_mail {
+    border-right: none;
+    padding-right: 0;
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $second_border_bg;
+  }
+  .my_profile_img {
+    border-radius: 50%;
+    border: 2px solid #67517a;
+    box-shadow: 0px 7px 8px -4px rgba(176, 190, 197, 0.2),
+      0px 12px 17px 2px rgba(176, 190, 197, 0.14),
+      0px 5px 22px 4px rgba(176, 190, 197, 0.12);
+    width: 50px;
+    height: 50px;
+    object-fit: none;
+  }
+  .my_personal_info_form {
+    margin-top: 10px;
+  }
+  .my_personal_form_inputs {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .my_personal_info_form {
+    .transparent_cta{
+      width: 100%;
+    }
+  }
+}

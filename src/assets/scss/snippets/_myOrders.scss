@@ -1,0 +1,115 @@
+.my_order_box {
+  margin-top: 20px;
+  border: 1px solid $second_border_bg;
+  padding: 30px;
+  border-radius: 20px;
+}
+.my_order_head_list {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.0002);
+  box-shadow: inset 0px -1px 0px $second_border_bg;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+.my_order_head_item {
+  @extend %text-third;
+  padding: 10px;
+}
+.my_order_details_list {
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 5px;
+  transition: 0.3s;
+  padding: 10px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &:hover {
+    background-color: $secondary-bg;
+    border-radius: 10px;
+  }
+}
+.my_order_img_name {
+  align-items: center;
+  gap: 4px;
+  line-height: 0;
+  img {
+    border-radius: 6px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.r_my_order_img_name {
+  display: none;
+  @extend .my_order_img_name;
+}
+
+.my_order_item_heading {
+  @extend %text-third;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 127px;
+  white-space: nowrap;
+}
+.my_order_status{
+padding: 5px 14px;
+}
+.r_my_order_status{
+    padding: 5px 14px;
+    display: none;
+}
+@media (max-width: 768px) {
+  .my_order_box {
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .my_order_head_list {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    box-shadow: none;
+    margin-bottom: 0;
+  }
+
+  .my_order_details_list {
+    grid-template-columns: 1fr;
+justify-items: end;
+    padding: 0;
+    &:not(:last-child) {
+      margin-bottom: 10px; //to be checked
+    }
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .my_order_item_heading {
+    text-overflow: unset;
+    white-space: unset;
+  }
+  .my_order_img_name {
+    display: none;
+  }
+  .my_order_head_item {
+    &:first-child,
+    &:last-child {
+      display: none;
+    }
+  }
+  .r_my_order_img_name {
+    display: flex;
+  }
+  .my_order_status
+  {
+    display: none;
+  }
+  .r_my_order_status
+  {
+    display: block;
+    text-align: right;
+    align-self: center;
+  }
+}

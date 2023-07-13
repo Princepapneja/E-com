@@ -1,0 +1,264 @@
+.account_sec,
+.login_sec {
+  background-color: $white;
+  padding: 120px 0 60px;
+}
+
+.form_sec_left {
+  min-height: 100vh;
+  width: 60%;
+}
+
+.form_sec_right {
+  min-height: 100vh;
+  width: 40%;
+}
+
+.sec_body {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+
+}
+.tab_wrapper {
+  border-bottom: 1px solid $second_border_bg;
+  border-radius: 5px;
+  margin-bottom: 62px;
+
+}
+.tab_cta {
+  text-transform: uppercase;
+  background: transparent;
+  padding: 12px 8px;
+  cursor: pointer;
+  color: $secondary-color;
+  margin-right: 10px;
+  @extend %text-first;
+}
+
+.tab_cta.active {
+  border-bottom: 2px solid $tertiary-color;
+  color: $tertiary-color !important;
+}
+
+.tab_content_right {
+  background: #FAFAFA;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+.form_input {
+  padding-right: 50px;
+}
+
+.eye_icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+/*/====== LOGIN PAGE =======/*/
+
+
+
+.form_heading {
+  @extend %product_title ;
+  color: $primary-color;
+  margin-bottom: 20px;
+}
+
+.form_checkbox {
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.form_checkbox:checked+label:after {
+  background-color: rgba(87, 75, 155, 0.54);
+}
+.checkbox_label {
+  @extend %text-second;
+  padding-left: 30px;
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+  color: $secondary-color;
+
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(87, 75, 155, 0.54);
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    width: 3px;
+    height: 10px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+    top: 3px;
+    z-index: 9;
+  }
+}
+
+.login_policy_wrapper {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.checkbox_label_registration::before {
+  top: 3px;
+}
+
+.policy_wrapper{
+  position: relative;
+  
+  &::after{
+    content: "";
+    position: absolute;
+    left: -9px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: -8px;
+    z-index: 3;
+    transition: 0.3s;
+}
+
+}
+.policy_wrapper:hover::after{
+  background: rgba(158, 158, 158, 0.1215686275);
+  
+}
+
+// form .form_btn {
+  
+//   margin-top: 30px;
+
+// } to be checked
+
+.spacer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 35px 0;
+  justify-content: center;
+  .spacer-line {
+    max-width: 310px;
+    width: 100%;
+    border-radius: 5px;
+    height: 1px;
+    background: linear-gradient(270deg, $second_border_bg 0%, rgba(87, 75, 155, 0) 100%);
+  }
+  .or {
+    @extend %text-third;
+    color: $secondary-color;
+  }
+  .spacer_line2 {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+}
+
+.form_social_media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form_social {
+  display: flex;
+  text-transform: uppercase;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid $third_border_bg;
+  border-radius: 30px;
+  justify-content: center;
+  padding: 8px 0;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: $tertiary-color;
+  }
+
+  &:hover .social_label {
+    color: #fff;
+  }
+}
+
+.social_label {
+  @extend %text-fourth;
+}
+
+form a.forgetBtn{
+  @extend %text-second;
+  color: $primary-color;
+}
+
+.login_policy_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*/====== RESPONSIVE =======/*/
+@media screen and (max-width:991px) {
+  .sec_body {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+@media screen and (max-width:768px){
+  .login_sec {
+    .form_input {
+      margin: 10px 0;
+    }
+
+    .checkbox_label {
+      font-size: 14px;
+      &:after {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .sec_body {
+    grid-template-columns: 1fr;
+  }
+  .tab_content_right {
+    display: none;
+  }
+
+  .form_heading {
+    margin-bottom: 14px;
+  }
+
+}
+
+@media screen and (max-width:575px) {
+  form .form_btn {
+    width: 100%;
+    max-width: 100%;
+  }
+}

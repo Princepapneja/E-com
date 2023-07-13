@@ -1,0 +1,45 @@
+
+// special button scss
+.special_card {
+    justify-content: space-around;
+    padding: 30px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url(../../images/special_card_bg.png);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    gap: 20px;
+    background-size: cover;
+    
+    // max-width: 270px;
+    // width: 100%;
+    margin: auto;
+    height: 100%;
+  }
+  .special_card_heading {
+    @extend %product_title;
+    color: $white;
+    margin-bottom: 20px;
+  }
+  .specical_card_desc {
+    @extend %text-third;
+    color: $white;
+  }
+  .special_card_cta {
+    display: block;
+    text-align: center;
+    background-color: $special_cta_bg;
+  }
+  @media (max-width: 768px) {
+  .special_card{
+    padding: 20px 10px;
+      // max-width: 168px;
+  }
+  
+  }
+  
+  
+  

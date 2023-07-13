@@ -1,0 +1,59 @@
+.second_banner {
+background-image: linear-gradient(97.16deg, rgba(31, 41, 45, 0.5) 2.37%, rgba(31, 41, 45, 0.3) 24.66%, rgba(31, 41, 45, 0.0893893) 45.47%, rgba(31, 41, 45, 0.022928) 56.45%, rgba(31, 41, 45, 0) 61.67%, rgba(31, 41, 45, 0) 85.23%), url('../../icons/ctabanner.svg');
+background-color: #67517A;
+background-repeat: no-repeat;
+background-position: bottom;
+border-radius: 20px;
+align-items: center;
+justify-content: space-between;
+padding: 20px 80px;
+gap: 10px;
+
+}
+.banner_shop_now{
+    @extend %text-second;
+    color: $hf-color;
+}
+.box_item_details{
+    @extend %text-second;
+    color: $white;
+    margin-right: 20px;
+}
+.discount_details{
+    @extend %text-second;
+    color: $discount-color;
+}
+.slash{
+    color:#d9d9d9;
+}
+.second_banner_heading{
+    @extend %secondary_heading;
+    max-width: 503px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+   
+}
+.second_banner_img{
+    display: block;
+}
+
+           /* ============== Media Query ============== */
+@media only screen and (max-width:"525px") {
+    .second_banner{
+        padding: 20px;
+    }
+    .box_item_details{
+        margin-right: 8px;
+    }
+    .second_banner_heading{
+        max-width: 140px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 12px;
+        margin-bottom: 28px;
+    }
+
+}

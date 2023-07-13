@@ -1,0 +1,126 @@
+.main_prdct_detail_list {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.main_prdct_detail_item {
+  gap: 10px;
+}
+.main_prdct_detail_item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.clr_box_item{
+  align-items: center;
+  gap: 10px;
+  .product_desc{
+    white-space: nowrap;
+    text-transform: capitalize;
+  }
+}
+.clr_radio {
+  display: none;
+  &:checked + .clr_circle {
+    border: 1.5px solid $tertiary-color;
+    padding: 3px;
+  }
+}
+.clr_circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: border 0.3s, padding 0.1s;
+}
+.clr_circle_inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+
+.size_scale {
+  padding: 20px 0;
+  border: 1px solid $border_bg;
+  border-radius: 10px;
+  gap: 18px;
+}
+
+.prdct_price_box {
+  gap: 10px;
+  justify-content: space-between;
+  border: 1px solid $border_bg;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  align-items: center;
+  .section_heading {
+    margin-bottom: 5px;
+  }
+}
+.number_ratting {
+  @extend %text-first;
+  color: $secondary-color;
+  text-align: right;
+  margin-bottom: 4px;
+}
+.size_number {
+  display: none;
+}
+
+.size_scale_label {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: $border_bg;
+  display: inline-block;
+}
+.size_number:checked + .size_scale_label {
+  background-color: $tertiary-color;
+  color: $white;
+}
+
+.prdct_btn {
+  width: 100%;
+  text-align: center;
+  margin: 0 !important;
+  @extend %text-fourth;
+  color: $white;
+  &:first-child {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .clr_box{
+    gap: 20px;
+  
+  }
+  .clr_radio {
+    display: none;
+    &:checked + .clr_circle {
+      border: 1px solid $tertiary-color;
+      padding: 2px;
+    }
+  }
+  .clr_circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+  }
+  .size_scale{
+    padding: 15px 0;
+    
+  }
+  .main_prdct_detail_item:last-child{
+position: fixed;
+bottom: 0;
+width: 100%;
+z-index: 2;
+left: 0;
+background: $secondary-bg;
+padding: 20px;
+border-top: 1px solid $second_border_bg;
+border-radius: 20px 20px 0px 0px;
+
+  }
+
+}

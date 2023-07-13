@@ -1,0 +1,266 @@
+.page_sec {
+  padding: 140px 0 80px;
+  display: flex;
+  align-items: center;
+}
+.section-columns {
+  display: flex;
+  height: 100%;
+}
+
+.page_body {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  gap: 24px;
+}
+
+.r_otp,
+.page_text {
+  color: $secondary-color;
+  @extend %text-second;
+  padding-top: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// /* Firefox */
+// input[type="number"] {
+//   -moz-appearance: textfield;
+// }
+
+.otp_number {
+  padding: 20px 40px;
+  border: 1px solid $second_border_bg;
+  border-radius: 20px;
+  margin: 40px 0;
+  display: flex;
+  gap: 10px;
+  max-width: 700px;
+  justify-content: space-evenly;
+}
+
+.otp_number {
+  input[type="number"] {
+    border: 1px solid rgba(87, 75, 155, 0.23);
+    border-radius: 50%;
+    max-width: 56px;
+    height: 56px;
+    color: $secondary-color;
+    text-align: center;
+
+    &:focus-visible {
+      outline: 1px solid #422659;
+    }
+  }
+}
+
+.registerotp.form_btn {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.46px;
+}
+
+.btn_wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+}
+
+.reSendContent {
+  display: flex;
+  gap: 10px;
+
+  span {
+    color: $secondary-color;
+  }
+}
+
+.reSendOtp {
+  color: $tertiary-color;
+}
+
+.page_rightSide {
+  background: $fourth-color;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+/*/======= Forget Password =======/*/
+
+.form_input {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+  // box-shadow: 0 0 0 1px rgb(87 75 155 / 23%);
+  // border: none;
+ 
+
+  // margin-bottom: 20px; dont think so
+  transition: 0.3s;
+}
+
+.phone-email-input {
+  .form_input {
+    margin: 40px 0 10px;
+  }
+}
+
+/*/======= New Password =======/*/
+
+.password_wrapper {
+  position: relative;
+}
+
+.eye_icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password_req {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  color: #495f6a;
+  padding-left: 14px;
+}
+
+.phone-email-input {
+  .new_password {
+    input.form_input {
+      margin-bottom: 3px;
+    }
+  }
+
+  .confrim_password {
+    input.form_input {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/*======= Responsive Start =======*/
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 768px) {
+  .page_sec {
+    height: 100vh;
+  }
+
+  .page_body {
+    grid-template-columns: 1fr;
+  }
+
+  .page_rightSide {
+    display: none;
+  }
+
+  .otp_number {
+    margin: 20px auto;
+    max-width: 400px;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .btn_wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .page_text {
+    padding-top: 10px;
+  }
+
+  .page_text.text-second {
+    font-size: 12px;
+  }
+
+  // .form_input {
+  //   margin: 20px 0 20px;
+  // }to br checked
+
+  .phone-email-input {
+    .form_input {
+      margin: 20px 0 20px;
+    }
+
+    .form_btn {
+      margin-top: 20px;
+    }
+  }
+
+  .otp_number {
+    padding: 10px 15px;
+    margin: 20px auto;
+    gap: 5px;
+    justify-content: space-evenly;
+
+    .otp_number input[type="number"] {
+      max-width: 40px;
+      height: 40px;
+    }
+  }
+
+  .registerotp.form_btn {
+    margin-top: 0;
+  }
+
+  .forget_password_sec {
+    .page_text {
+      font-size: 12px;
+      line-height: 166%;
+      letter-spacing: 0.4px;
+      text-transform: capitalize;
+      padding-top: 10px;
+    }
+
+    .primary_cta.form_btn {
+      padding: 8px 16px;
+    }
+  }
+
+  .new_password_sec {
+    .page_text {
+      font-size: 14px;
+    }
+
+    .phone-email-input {
+      .new_password {
+        input.form_input {
+          margin-bottom: 3px;
+        }
+      }
+
+      .confrim_password {
+        input.form_input {
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .otp_number input[type="number"] {
+    max-width: 40px;
+    height: 40px;
+  }
+}

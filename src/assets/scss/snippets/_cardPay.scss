@@ -1,0 +1,37 @@
+.card_pay {
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 196px);
+  
+  }
+  .card_cta_slider{
+    gap: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $second_border_bg;
+  }
+
+  .add_card_cta {
+    text-transform: capitalize;
+    @extend %text-second;
+    border: 2px dashed $second_border_bg;
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+  }
+  @media (max-width: 1100px){
+    .card_cta_slider{
+        flex-direction: column;
+
+    }
+    .card_pay{
+        width: 100%;
+    }
+  }
+  @media (max-width: 768px){
+    .card_pay{
+      width: calc(100% + 20px);
+    }
+  }

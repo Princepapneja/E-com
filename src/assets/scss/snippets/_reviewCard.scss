@@ -1,0 +1,44 @@
+.review_card {
+  border: 1px solid $border_bg;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 704px;
+  width: 100%;
+  margin-bottom: 20px;
+  // &:not(:last-child) {
+  //   margin-bottom: 20px;
+  // }
+  .transparent_cta {
+    padding: 4px 10px;
+  }
+}
+.review_avatar {
+  line-height: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.reviwer_profile_details {
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.review_cta{
+  margin-top: 20px;
+}
+
+//media query
+@media (max-width: 768px) {
+  .review_card {
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    // &:not(:last-child) {
+    //   margin-bottom: 10px;
+    // }
+  }
+  .review_cta{
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,239 @@
+/*======= TEXT COLOR VARIABLES =======*/
+
+$primary-color: #1f292d;
+$secondary-color: #495f6a;
+$tertiary-color: #422659;
+$fourth-color: #fafafa;
+$fifth-color: #abb5ba;
+
+$white: #fff;
+$black: #000;
+$hf-color: #c4cfd4;
+$discount-color: #ffb400;
+$error-color: red;
+$green-color: #2e7d32;
+$red-color: #d32f2f;
+
+/*======= BACKGROUND COLOR VARIABLES =======*/
+
+$primary-bg: #4226590a; //rgba(237, 95, 96, 0.04);
+$secondary-bg: #f7f6f8; //rgba(66, 38, 89, 0.04)
+$discount-bg: #ed6c02;
+$header-bg: #0c0314;
+$footer-bg: #000000;
+$special_cta_bg: #693e8e;
+$border_bg: #42265914; //rgba(66, 38, 89, 0.08);
+$second_border_bg: #574b9b1f; //rgba(87, 75, 155, 0.12)
+$third_border_bg: #42265980; //rgba(66, 38, 89, 0.5);
+$h_menu_bg: #574b9b0a; //rgba(87, 75, 155, 0.04)
+$address_tag_bg: #ffb900;
+$card-bg: #fef9f9;
+$tertiary-bg: #67517a;
+
+/*======= FONT WEIGHT VARIABLES =======*/
+
+$hairline-weight: 100;
+$thin-weight: 200;
+$light-weight: 300;
+$normal-weight: 400;
+$medium-weight: 500;
+$semibold-weight: 600;
+$bold-weight: 700;
+$xbold-weight: 800;
+$black-weight: 900;
+
+/*======= FONT FAMILY VARIABLES =======*/
+
+$primary_font_family: "Heebo", sans-serif;
+$secondary_font_family: "Inter", sans-serif;
+
+/*=======****** Extends ******=======*/
+/*======= BUTTON COMMON CLASS =======*/
+
+%primary_cta {
+  font-family: $secondary_font_family;
+  font-weight: $medium-weight;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 30px;
+  color: $white;
+  padding: 6px 16px;
+  background-color: $tertiary-color;
+  border: none;
+  cursor: pointer;
+}
+
+/*======= HEADING COMMON CLASS =======*/
+%primary_heading {
+  font-family: $primary_font_family;
+  font-weight: $medium-weight;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.5px;
+  color: $primary-color;
+  text-transform: capitalize;
+}
+
+%secondary_heading {
+  font-family: $primary_font_family;
+  font-weight: $medium-weight;
+  font-size: 48px;
+  line-height: 56px;
+  color: $white;
+  text-transform: capitalize;
+}
+
+%section_heading {
+  font-family: $primary_font_family;
+  font-weight: $medium-weight;
+  font-size: 34px;
+  line-height: 42px;
+  letter-spacing: 0.25px;
+  color: $primary-color;
+  text-transform: capitalize;
+}
+%product_title {
+  font-family: $primary_font_family;
+  font-weight: $medium-weight;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  color: $primary-color;
+  text-transform: capitalize;
+}
+%product_price {
+  color: $primary-color;
+  font-size: 24px;
+  font-family: $primary_font_family;
+  font-weight: $medium-weight;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+// to be checked
+%discount_offer {
+  padding: 0px 6.5px;
+  background-color: $discount-bg;
+  color: $white;
+  border-radius: 64px;
+  font-weight: $medium-weight;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+  font-family: $secondary_font_family;
+}
+%line {
+  background-color: $border_bg;
+  height: 1px;
+  border-radius: 5px;
+  width: 100%;
+}
+%bg-white {
+  background-color: $white !important;
+}
+
+/*======= TEXT COMMON CLASS =======*/
+%text-first {
+  font-family: $secondary_font_family;
+  font-weight: $medium-weight;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: $primary-color;
+}
+
+%text-second {
+  font-family: $secondary_font_family;
+  font-weight: $normal-weight;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: $primary-color;
+  text-transform: capitalize; //to be checked
+}
+
+%text-third {
+  font-family: $secondary_font_family;
+  font-weight: $normal-weight;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.17px;
+  color: $primary-color;
+  color: $secondary-color;
+}
+%text-fourth {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+  color: $tertiary-color;
+}
+%text-fifth {
+  font-family: $secondary_font_family;
+  font-style: normal;
+  font-weight: $medium-weight;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+  color: $secondary-color;
+}
+%text-six {
+  font-family: $secondary_font_family;
+  font-style: normal;
+  font-weight: $normal-weight;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  color: $secondary-color;
+}
+%pop-up_overlay{
+  background: #b6bfc3;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+/*======= RESPONSIVE START =======*/
+
+@media screen and (max-width: 768px) {
+  %primary_heading {
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: 0.25px;
+  }
+
+  %secondary_heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  %section_heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  %product_title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  %product_price {
+    font-size: 20px;
+    letter-spacing: 0.15px;
+  }
+  %text-second {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.17px;
+  }
+  %text-third {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+  }
+}

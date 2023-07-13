@@ -1,0 +1,52 @@
+.order_header {
+  padding: 10px 20px;
+  background: $tertiary-bg;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+
+}
+.order_header_left {
+  gap: 8px;
+  align-items: center;
+}
+.ordr_header_heading {
+  @extend %text-second;
+  color: $hf-color;
+  margin-right: 8px;
+}
+.ordr_header_detail {
+  @extend %text-second;
+  color: $white;
+}
+.clipboard_icon {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  padding: 5px 6.5px;
+  line-height: 0
+}
+.order_header_right_cta{
+    @extend %text-first;
+    color: $white;
+    padding: 6px 8px;
+}
+@media (max-width: 768px) {
+  .order_header {
+    padding: 10px 10px 10px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ordr_header_heading {
+    margin-right: 4px;
+  }
+  .order_header_left {
+    gap: 4px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .order_header_right_cta{
+   align-self: center;
+
+  }
+}

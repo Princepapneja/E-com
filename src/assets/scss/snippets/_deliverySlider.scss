@@ -1,0 +1,71 @@
+.checkout_menu_box{
+    padding: 30px;
+    background: $fourth-color;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.checkout_menu {
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.checkout_menu_heading {
+  @extend %text-second;
+  color: $secondary-color;
+}
+.Checkout-line{
+    @extend %line;
+    justify-content: space-between;
+    height: 4px;
+    margin-bottom: 10px;
+
+}
+.d_slider_circle {
+    &:first-child{
+        //not fix just for output
+        box-shadow: 0px 7px 8px -4px rgba(176, 190, 197, 0.2),
+          0px 12px 17px 2px rgba(176, 190, 197, 0.14),
+          0px 5px 22px 4px rgba(176, 190, 197, 0.12);
+    }
+  border-radius: 30px;
+  background-color: $white;
+  padding: 10px;
+  position: relative;
+  bottom: 19px;
+  height: 38px;
+  width: 38px;
+  line-height: 0;
+
+
+
+}
+.d_slider_circle_inner{
+    border: 3px solid $secondary-color;
+ border-radius: 50%;
+  padding: 6px;
+  margin: auto;
+
+}
+// .d_slider_circle_inner {
+//   border: 3px solid $tertiary-color;
+//   border-radius: 50%;
+//   padding: 2.5px;
+//   height: 19px;
+//   width: 19px;
+// }
+// .d_slider_inner_point{
+// background-color: $tertiary-color;
+// width: 8px;
+// height: 8px;
+// border-radius: 50%;
+// }
+@media (max-width: 768px){
+    .checkout_menu_box{
+        padding: 15px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    .checkout_menu_heading{
+        font-size: 12px;
+    }
+}

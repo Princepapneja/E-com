@@ -1,0 +1,20 @@
+.prdct_slider_img {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: $secondary-bg; 
+    line-height: 0;
+
+
+  }
+  .slider_img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  @media (max-width : 768px){
+    .prdct_slider_img {
+        padding: 0;
+        width: max-content;
+      }
+  }

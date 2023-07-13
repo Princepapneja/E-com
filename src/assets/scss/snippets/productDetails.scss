@@ -1,0 +1,5 @@
+.product_description{
+    @extend %text-second;
+    color: $secondary-color;
+    margin-top: 20px;
+}

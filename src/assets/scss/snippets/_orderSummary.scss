@@ -1,0 +1,35 @@
+.order_details_list {
+  padding: 30px;
+  border: 1px solid $border_bg;
+  border-radius: 20px;
+  // width: 100%;
+  min-width: 368px;
+  // width: 100%;
+}
+.order_details_heading {
+  @extend %product_title;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border-bottom: 1px solid $border_bg;
+  
+}
+.order_details_item {
+  margin-bottom: 20px;
+}
+
+      
+@media (max-width: 768px) {
+
+  .order_details_list {
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .order_details_item {
+    margin-bottom: 14px;
+    .mb-10 {
+      margin-bottom: 8px;
+    }
+  }
+}

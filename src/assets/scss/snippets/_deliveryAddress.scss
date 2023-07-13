@@ -1,0 +1,36 @@
+.delivery_form_heading {
+  margin-bottom: 20px;
+  @extend %text-second;
+}
+.input_fields {
+  gap: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.address_form_line {
+  margin: 20px 0;
+  @extend %line;
+}
+@media (max-width: 768px) {
+  .delivery_address_form {
+    .form_input {
+      margin: 0;
+    }
+  }
+
+  .form_heading {
+    margin-bottom: 10px;
+  }
+  .address_form_line {
+    margin: 10px 0;
+  }
+  .input_fields {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .delivery_form_heading {
+    margin-bottom: 10px;
+  }
+}

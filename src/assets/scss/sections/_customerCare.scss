@@ -1,0 +1,81 @@
+.customer_care_chat_prdct {
+  gap: 24px;
+}
+.chat_product_details_box {
+  padding: 30px;
+  background: #fafafa;
+  border-radius: 20px;
+  max-width: 466px;
+  width: 100%;
+}
+.chat_product_img {
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 40px;
+  place-items: center;
+  background-color: $secondary-bg;
+  img {
+    width: 366px;
+    height: 250px;
+    border-radius: 20px;
+  }
+}
+.look_chat_cta {
+  display: none;
+}
+.chat_with_agent {
+  .chat_box{
+    border: 1px solid $second_border_bg;
+  }
+  .message_box{
+    height: 450px;
+  }
+}
+
+.r_color_details{
+  display: none;
+}
+@media (max-width: 768px) {
+  .customer_care_chat_prdct {
+    flex-direction: column;
+    gap: 10px;
+    .placed_order_detail_item {
+      .section_heading {
+      margin-top: 0;}
+      .mb-10 {
+        margin-bottom: 6px;
+      }
+      .product_desc {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .clr-none{
+    display: none;
+  }
+  .r_color_price{
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+  .look_chat_cta {
+    display: block;
+  }
+  .chat_with_agent {
+    display: none;
+  }
+
+  .chat_product_details_box {
+    padding: 20px 15px;
+    border-radius: 15px;
+    max-width: 100%;
+  }
+  .chat_product_img {
+    margin-top: 20px;
+    img {
+      width: 265px;
+      height: 228px;
+    }
+  }
+}

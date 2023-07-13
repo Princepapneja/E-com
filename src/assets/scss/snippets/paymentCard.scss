@@ -1,0 +1,59 @@
+.payment_card {
+  background: $primary_bg;
+  border-radius: 20px;
+  padding: 20px;
+  width: 270px;
+}
+
+.payment_card_item {
+  justify-content: space-between;
+  gap: 10px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &:last-child {
+    padding: 10px 0 0 0;
+  }
+}
+.payment_card_delete_name {
+  align-items: center;
+  gap: 5px;
+  background: $h_menu_bg;
+  padding: 6px 5px;
+  border-radius: 10px;
+}
+.trash_icon {
+  line-height: 0;
+  path {
+    &:hover {
+      fill: $red-color;
+    }
+  }
+}
+.bank_logo {
+  background: $h_menu_bg;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+}
+.bank_name {
+  @extend %text-second;
+  color: $secondary-color;
+}
+.pay_card_head {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #c4cfd4;
+}
+.pay_card_details {
+  @extend %text-fifth;
+  color: $white;
+}
+.pay_card_expire {
+  align-self: flex-end;
+}

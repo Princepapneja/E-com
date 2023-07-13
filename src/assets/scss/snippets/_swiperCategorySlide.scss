@@ -1,0 +1,22 @@
+.filter_arrow_box {
+    border-bottom: 1px solid $border_bg;
+    border-radius: 5px;
+}
+
+.swiper-slide {
+    width: auto;
+}
+
+.category_name {
+    @extend %text-first;
+    color: $secondary-color;
+    padding: 12px 8px;
+    white-space: nowrap;
+    border-bottom: 1px solid $white;
+
+}
+
+.swiper_active {
+    color: $tertiary-color;
+    border-bottom: 1px solid $tertiary-color;
+}

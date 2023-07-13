@@ -1,0 +1,72 @@
+ @import "./variables";
+@import "./common";
+@import "./header-footer/header";
+@import './header-footer/accountHeader';
+@import "./header-footer/footer";
+
+/*======= Form Page =======*/
+@import './sections/account';
+@import './sections/accountForm.scss';
+
+/*======= Register Form Page =======*/
+@import './registerForm.scss';
+
+/*======= Sections  =======*/
+@import './sections/newsletter';
+@import './sections/categoryCollection';
+@import './sections/secondBanner.scss';
+@import "./sections/bannerSection";
+@import "./sections/ourPartners";
+@import "./sections/cartProducts";
+@import "./sections/checkoutSec";
+@import "./sections/orderReturn";
+@import "./sections/customerCare";
+@import "./sections/upiSec";
+@import "./sections/myAccountSec";
+@import "./sections/contactUs";
+
+
+
+
+/*/======= Snippets =======/*/
+@import './snippets/inputs';
+@import './snippets/categoryCollectionCard';
+@import './snippets/secHeader.scss';
+@import './snippets/button.scss';
+@import './snippets/swiperCategorySlide';
+@import './snippets/productSectionCard';
+@import './snippets/specialCard.scss';
+@import './snippets/productHCard';
+@import './snippets/extra';
+@import './snippets/orderSummary';
+@import './snippets/cartProductCard';
+@import './snippets/deliverySlider';
+@import './snippets/deliveryAddress';
+@import './snippets/savedDeliveryAdd';
+@import './snippets/paymentCard.scss';
+@import './snippets/cardPay';
+@import './snippets/addNewCard';
+@import './snippets/productDetailsbox';
+@import './snippets/mainProductCard.scss';
+@import './snippets/productSmallSlider';
+@import './snippets/aboutProductHeader';
+@import './snippets/productInfo';
+@import './snippets/productDetails.scss';
+@import './snippets/customerReviews';
+@import './snippets/reviewCard';
+@import './snippets/upiNetBanking';
+@import './snippets/emiOpton';
+@import './snippets/cashOnDelivery';
+@import './snippets/myProfile';
+@import './snippets/myOrders';
+@import './snippets/orderHeader';
+@import './snippets/placedOrderDetails';
+@import './snippets/chatWithAgent';
+@import './snippets/ourProsCard';
+@import './snippets/categorySmallCard';
+@import './snippets/productFilter';
+@import './snippets/pagination';
+@import './snippets/products';
+
+/*/======= Pop-up =======/*/
+@import './pop-ups/popUpHeader'

@@ -1,0 +1,21 @@
+.pagination_box{
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  .arrow_cta{
+    padding: 12px;
+    line-height: 0;
+  }
+
+  .page_number {
+    @extend %text-third;
+    width: 32px;
+    padding: 6px 0;
+    text-align: center;
+    &.active {
+      color: $white;
+      background: #422659;
+      border-radius: 16px;
+    }
+  }

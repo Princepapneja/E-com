@@ -1,0 +1,21 @@
+.cod_box {
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+  }
+  .span_text {
+    @extend %text-fifth;
+    color: $fifth-color;
+  }
+  .cod_breif {
+    @extend %text-third;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .cod_breif {
+      margin-top: 10px;
+    }
+    
+  }
+  

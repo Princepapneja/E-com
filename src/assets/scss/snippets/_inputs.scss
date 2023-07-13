@@ -1,0 +1,116 @@
+/*/======= Input focus functionality =======/*/
+
+.user-input {
+  position: relative;
+  width: 100%;
+}
+
+.form_input,
+.inputLabel {
+  color: $secondary-color;
+ 
+}
+
+
+.inputLabel {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  background-color: white;
+  @extend %text-second;
+}
+.input_checkbox{
+  padding: 9px;
+}
+.form_checkbox,.form_radio {
+  margin: 3px;
+}
+.radio_label {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  text-transform: capitalize;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  color: $secondary-color;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 11px;
+    height: 11px;
+    border: 2px solid rgba(87, 75, 155, 0.54);
+    border-radius: 4px;
+
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    width: 3px;
+    height: 6px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+    top: 7px;
+    z-index: 1;
+  }
+}
+.form_radio{
+  display: none;
+}
+.form_radio:checked + label:after {
+border: none;
+width: 15px;
+height: 15px;
+background-color: rgba(87, 75, 155, 0.54);
+}
+.input_radio{
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+.form_input:focus ~ .inputLabel,
+.form_input:not(:placeholder-shown).form_input:not(:focus) ~ .inputLabel {
+  top: -14px;
+  font-size: 14px;
+  left: 25px;
+  color: $tertiary-color;
+  background-color: white;
+  padding: 0 5px;
+}
+.select_menu_box{
+  position: relative;
+}
+.select_menu_arrow_img{
+  position: absolute;
+  top: 50%;
+  right: 27px;
+}
+.select_menu {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid $second_border_bg;
+  border-radius: 30px;
+  outline: none;
+  @extend %text-second;
+  color: $secondary-color;
+  appearance: none;
+}
+
+/*/======= Input focus functionality End =======/*/
+@media (max-width: 768px){
+  .form_input:focus ~ .inputLabel,
+.form_input:not(:placeholder-shown).form_input:not(:focus) ~ .inputLabel {
+  top: -8px;
+  
+}
+}

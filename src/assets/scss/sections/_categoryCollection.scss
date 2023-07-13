@@ -1,0 +1,62 @@
+.category_collection {
+  .sec_header {
+    margin-bottom: 22px;
+  }
+}
+
+/* ============== Slider ============== */
+
+.category_filter_links {
+  border-bottom: 1px solid $border_bg;
+  border-radius: 5px;
+  display: flex;
+  overflow: scroll;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.collection_cards {
+  margin-top: 40px;
+  border-radius: 20px;
+  grid-template-columns: repeat(3, 33%);
+  gap: 24px;
+}
+.special_category_card{
+  display: flex;
+}
+/* ============== Media Query ============== */
+@media only screen and (max-width: "1250px") {
+  .collection_cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .special_category_card{
+justify-content: center;
+gap: 9px;
+  }
+}
+
+@media only screen and (max-width: "768px") {
+  .collection_cards {
+    margin-top: 20px;
+    border-radius: 10px;
+    gap: 9px;
+  }
+  .special_category_card{
+    flex-wrap: wrap;
+    // justify-content: unset;
+      }
+}
+@media screen and (max-width: 480px) {
+  .special_category_card {
+    grid-template-columns: 1fr;
+    .collection_images {
+      img {
+        height: 79px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: "350px") {
+  .collection_cards {
+    grid-template-columns: 100%;
+  }
+}

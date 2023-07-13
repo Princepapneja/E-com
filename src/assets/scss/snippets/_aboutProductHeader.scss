@@ -1,0 +1,21 @@
+.about_prdct_heading_arrow{
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .open_about_prdct_heading{
+        @extend %product_title;
+        transition: 0.3s;
+    }
+    
+}
+
+.about_prdct_arrow{
+   line-height: 0;
+   transition: 0.5s;
+}
+
+.close_about_prdct_heading{
+    @extend %text-second;
+    color: $secondary-color;
+    transition: 0.3s;
+}

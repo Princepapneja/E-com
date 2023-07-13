@@ -1,0 +1,211 @@
+.product-h_card {
+  line-height: 0;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-between;
+  //   background-color: blue;
+  background: linear-gradient(
+    269.85deg,
+    $secondary-bg 0.11%,
+    rgba(66, 38, 89, 0) 99.86%
+  );
+  width: 564px;
+  border: 1px solid $border_bg;
+  border-radius: 20px;
+  .h_detail_box > li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .product_h_img {
+    border-radius: 20px;
+    max-width: 250px;
+    width: 100%;
+    max-height: 194px;
+  }
+}
+.link_img {
+  line-height: 0;
+}
+.special_product-h_card {
+  line-height: 0;
+  padding: 30px;
+  justify-content: space-between;
+  //   background-color: blue;
+  background-repeat: no-repeat !important;
+  background-position: bottom !important;
+  border-radius: 20px;
+  // width: 368px;
+  .product_h_img {
+    transform: rotate(19deg);
+    max-width: 150px;
+    width: 100%;
+    height: 140px;
+  }
+
+  .h_card_left {
+    padding: 0;
+  }
+  .h_discount {
+    margin-bottom: 10px;
+  }
+  .h_product_price {
+    margin-bottom: 20px;
+  }
+}
+.banner_product-h_card {
+  padding: 20px;
+  gap: 20px;
+  background: linear-gradient(
+      269.85deg,
+      rgba(66, 38, 89, 0.04) 0.11%,
+      rgba(66, 38, 89, 0) 99.86%
+    ),
+    url("../../images/CTABanner.svg");
+  border: 1px solid rgba(66, 38, 89, 0.08);
+  border-radius: 20px;
+  justify-content: space-between;
+  .product_h_img {
+    border-radius: 20px;
+    max-width: 567px;
+    width: 100%;
+    height: 400px;
+  }
+  .h_card_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 30px 0;
+  }
+  .h_clr_box {
+    width: fit-content;
+  }
+  .h_discount {
+    @extend %section_heading;
+  }
+  .h_product_title {
+    @extend %product_price;
+  }
+  .h_product_price {
+    @extend %secondary_heading;
+    color: $tertiary-color;
+  }
+  .h_detail_box > li:not(:last-child) {
+    margin-bottom: 20px;
+    white-space: nowrap;
+  }
+}
+
+.h_card_left {
+  padding: 0 20px;
+}
+
+.h_discount {
+  @extend %section_heading;
+}
+.h_product_title {
+  @extend %text-second;
+}
+.h_product_price {
+  @extend %product_title;
+}
+.h_product_line {
+  @extend %line;
+  margin: 20px 0;
+}
+.h_clr_box {
+  gap: 15px;
+  box-shadow: 0px 7px 8px -4px rgba(176, 190, 197, 0.2),
+    0px 12px 17px 2px rgba(176, 190, 197, 0.14),
+    0px 5px 22px 4px rgba(176, 190, 197, 0.12);
+  border-radius: 30px;
+  padding: 5px;
+  display: inline-flex;
+}
+.h_color {
+  height: 15px;
+  width: 15px;
+  background-color: green;
+  border-radius: 30px;
+}
+
+// Responsive for Screen Size 768px
+@media (max-width: 768px) {
+  .product-h_card {
+    width: 335px;
+    .h_product_line {
+      margin: 14px 0;
+    }
+  }
+  .product_h_img {
+    border-radius: 10px;
+
+    max-width: 142px;
+    width: 100%;
+    height: 150px;
+  }
+  .banner_product-h_card {
+    border-radius: 10px;
+    justify-content: space-between;
+    .product_h_img {
+      border-radius: 10px;
+
+      max-width: 142px;
+      width: 100%;
+      height: 150px;
+    }
+    .h_card_left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 0;
+    }
+    .h_clr_box {
+      width: fit-content;
+    }
+    .h_discount {
+      font-family: 'Heebo';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 160%;
+/* identical to box height, or 32px */
+
+letter-spacing: 0.15px;
+text-transform: capitalize;
+    }
+    .h_product_title {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 143%;
+
+      letter-spacing: 0.17px;
+
+      color: #1f292d;
+    }
+    .h_product_price {
+      font-family: "Heebo";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 133.4%;
+      text-transform: capitalize;
+      color: $tertiary-color;
+    }
+    .h_detail_box > li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  .h_detail_box > li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .h_card_left {
+    padding: 0;
+  }
+  .h_product_title {
+    white-space: nowrap;
+  }
+}
