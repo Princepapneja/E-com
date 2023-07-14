@@ -35,7 +35,7 @@ function SwiperCategorySlider({sliderMenu}) {
         >
           {
             
-            sliderMenu.map((elem, index) => {
+            sliderMenu?.map((elem, index) => {
               return (
               <SwiperSlide key={index}>
                <Button type='active_cta' index={index} label={elem} setIsActive={setIsActive} isActive={isActive}/>

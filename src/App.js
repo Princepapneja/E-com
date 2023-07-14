@@ -30,7 +30,7 @@ function App() {
           <Route path="/cart" element={<Cart />}></Route>
           <Route path="/productDetails" element={<ProductDetails />}></Route>
           <Route path="/checkout" element={<Checkout />}></Route>
-          <Route path="/login" element={<Login />}></Route>
+          <Route path="/login" element={<Login />}></Route> 
           <Route path="/register" element={<Signup />}></Route>
           <Route path="/forget-password" element={<ForgetPassword />}></Route>
           <Route path="/NewPassword" element={<NewPassword />}></Route>
