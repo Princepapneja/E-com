@@ -36,7 +36,7 @@ export default function MainSlider({ card, sectionName, left_pad }) {
         modules={[FreeMode, Navigation]}
         className="mySwiper"
       >
-        {card.map((elem, index) => {
+        {card?.map((elem, index) => {
           return <SwiperSlide key={index}>
               {elem}
             </SwiperSlide>;
