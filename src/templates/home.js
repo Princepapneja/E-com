@@ -10,7 +10,7 @@ import RelatedItem from "../components/sections/relatedItem";
 import FeatureSection from "../components/sections/featureSection";
 import OurPartners from "../components/sections/ourPartners";
 import ProductHSection from "../components/sections/productHSection";
-
+import FileUploadComponent from "./test.js";
 
 const Home = () => {
   let arr=[1,2,3,4,5,6]
@@ -40,6 +40,7 @@ const Home = () => {
   ];
   return (
     <>
+    <FileUploadComponent />
       <BannerSection heading={"Products for your need start shopping now"}/>
       <CategoryCollection heading="Category products Collections" arr={arr} sliderMenu={sliderMenu}/>
       <FeatureSection/>
