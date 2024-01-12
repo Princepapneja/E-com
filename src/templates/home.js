@@ -38,6 +38,7 @@ const Home = () => {
     "Smart tv.",
     "Monitors",
   ];
+  console.log("add kita")
   return (
     <>
     <FileUploadComponent />
