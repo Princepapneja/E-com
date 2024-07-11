@@ -41,7 +41,6 @@ const Home = () => {
   console.log("add kita")
   return (
     <>
-    <FileUploadComponent />
       <BannerSection heading={"Products for your need start shopping now"}/>
       <CategoryCollection heading="Category products Collections" arr={arr} sliderMenu={sliderMenu}/>
       <FeatureSection/>
